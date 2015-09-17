@@ -7,7 +7,8 @@ This gives you a visual reference to tell you if tweaks are needed on your font-
 Read why the 45-75 rule is important and [view the demo here](http://mds.sh/readable).
 
 ## Implementation
-There are 3 files required to get **Readable** working on your site. 2 of them are inside the **readable** folder and the other is jQuery.
+There are 3 files required to get **Readable** working on your site.
+2 of them are inside the **readable** folder and the other is jQuery.
 
 1. readable.css
 2. readable.js

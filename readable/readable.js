@@ -7,7 +7,7 @@
 
 (function($) {
 
-  var showReadableOnLoad = true; 
+  var showReadableOnLoad = false; 
   var charCountShowing = false; // don't set this to true
 
   $('body') 

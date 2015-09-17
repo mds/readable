@@ -14,7 +14,7 @@ There are 3 files required to get **Readable** working on your site.
 3. jQuery ( https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js )
 
 
-Put readable.css before your closing `</head>` and jQuery and readable.js just before your closing `</body>`
+Put **readable.css** before your closing `</head>` and **jQuery** and **readable.js** just before your closing `</body>`
 
 ```html
 <html>

@@ -1,0 +1,85 @@
+body
+  font-size: 16px
+  line-height: 1.5em
+  font-family: 'Georgia', serif
+  font-weight: 400
+  color: $dark
+  background: $bg
+  +easeall
+
+  +small //480
+    font-size: 18px
+    +easeall
+
+  +medium //768
+    font-size: 22px
+    +easeall
+
+  +large //1336
+    font-size: 26px
+    +easeall
+
+h1
+  font-size: 3em
+  font-weight: 700
+  margin-bottom: 0
+  padding-bottom: .75rem
+  line-height: 1em
+
+  +small
+    font-size: 4em
+
+h2
+  font-size: 1.5em
+  margin-top: 2em
+
+article
+  max-width: 30em
+  margin: 1em auto 3em
+  padding: .5em
+
+  p a 
+    color: $secondary
+    font-style: italic
+    +easeall
+
+.meta
+  padding-bottom: .75em
+  margin-bottom: 3em
+  border-bottom: 2px solid rgba($light, .2)
+  position: relative
+
+.desc
+  color: $light
+  font-size: 1em
+  font-style: italic
+  padding: 1em 0
+  display: inline
+  margin: 0
+
+  +small
+    margin: 0 .5em
+    font-size: .875em
+
+  span 
+    +small
+      float: right
+
+.cta-primary
+  font-style: italic
+  font-size: 1em
+  padding: 1.55em .5em
+  +easeall
+
+  &:hover
+    background: none
+    color: rgba($light , .5)
+    +easeall
+
+a 
+  color: $secondary
+  text-decoration: none
+
+  &:hover
+    background: rgba($secondary, .1)
+    +easeall

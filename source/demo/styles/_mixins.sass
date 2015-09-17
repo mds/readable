@@ -1,0 +1,19 @@
+$small-width: 480px
+$medium-width: 768px
+$large-width: 1366px
+
+=small 
+  @media (min-width: #{$small-width})
+    @content
+
+=medium 
+  @media (min-width: #{$medium-width})
+    @content
+
+=large
+  @media (min-width: #{$large-width})
+    @content
+
+=easeall
+  transition: all .2s ease-out
+

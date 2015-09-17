@@ -1,8 +1,6 @@
 # Readable
 
-<video name="player" id="player_html5_api" preload="auto" src="https://s3.amazonaws.com/f.cl.ly/items/210u2G0B1e2Y3U0m1g3B/readable.mp4">
-    <source src="https://s3.amazonaws.com/f.cl.ly/items/210u2G0B1e2Y3U0m1g3B/readable.mp4" type="video/mp4">
-  </video>
+![readable in action](https://s3.amazonaws.com/f.cl.ly/items/081k1i0l1G1s090b2t2W/readable.gif)
 
 Readable is a small jQuery plugin to help you make your paragraphs, well, more readable. It injects styling between the 45th and 75th character of every `<p>` tag on your page.
 

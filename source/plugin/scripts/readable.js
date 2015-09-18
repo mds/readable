@@ -7,10 +7,9 @@
 
 (function($) {
 
-  var showReadableOnLoad = true; 
-  var charCountShowing = false; // don't set this to true
+  var charCountShowing = false;
 
-  $('body') 
+  $('body')
     .prepend("<div class='switch'><input id='toggle' class='toggle' type='checkbox'><label for='toggle'></label></div>");
 
   function addSpans(){
@@ -49,14 +48,19 @@
   });
 
   function init(){
-    $('.toggle').removeAttr('disabled');
-    if( showReadableOnLoad === true ){
-      $( '.toggle' ).prop('checked', true);
-      charCountShowing = true;
-      addSpans();
-    }
+    $( '.toggle' ).prop('checked', true);
+    charCountShowing = true;
+    addSpans();
+    setTimeout(function() {      
+      toggleSpans();     
+      unCheck(); 
+      $('.toggle').attr('disabled', false);
+    }, 2000);
   }
 
+  function unCheck(){
+    $('.toggle').prop('checked', false);
+  }
   
   $('.toggle').attr('disabled', true);
   setTimeout(init, 1000);

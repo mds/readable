@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Readable - A plugin for creating readable paragraphs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Full stack designer. Specialty in iOS and responsive web design. Father of 4. Currently obsessed with cycling." />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <link rel="stylesheet" href="source/demo/styles/screen.css">
+    <link rel="stylesheet" href="readable/readable.css">
+  </head>
+  <body>
+    <article>
+      <section class="meta">
+        <h1>Readable</h1>
+        <div class="desc">A jQuery plugin<span> by <a href="http://twitter.com/mds"><strong>@mds</strong></a></span></div>
+      </section>
+      <p>Introducing <a href="https://github.com/mds/readable">Readable</a></strong>, a jQuery plugin to help you create optimally sized paragraphs for maximum readability. <strong>Toggle the switch</strong> in the lower right corner to see it in action. It conveniently marks the <strong>45th</strong> and <strong>75th</strong> character of every paragraph tag when turned on. Your paragraph line breaks should fall somewhere in between those two numbers. If that’s not happening, then you’ve got some tweaking to do. <a href="https://github.com/mds/readable"><strong>View it on GitHub</strong></a></p>
+
+      <h2>Typography</h2>
+      <p>Good typography can make or break a web design. There are lots of subtle nuances that deserve attention when laying out your type and one of those nuances is optimal <strong>line width</strong>, measured by <strong>character count</strong>. </p>
+
+      <p><strong>Optimal</strong> varies depending on whether or not your text is multi-column like a magazine or single column like 99% of web-based blocks of copy. Either way, the character count of one line is a major contributor to the overall readability of your content. Readability is like Ron Burgundy—kind of a big deal.</p>
+
+      <p>For those of us creating websites for a living, our magic character count falls somewhere in between <strong>45–75</strong>. These numbers refer to the number of characters occupying one line of text within a paragraph, before a line break and text wrap. If that number is too low or too high, the paragraph becomes much less <strong>readable</strong>.
+
+      <h2>Too Small</h2>
+      <p>When the line count is below <strong>45</strong> characters, the paragraph becomes very tight. It’s hard to fully soak up information in a tiny paragraph without scanning left and right like a mad man.</p>
+
+      <h2>Too Big</h2>
+      <p>On the flip side, if your text extends past <strong>75</strong> characters on one line, the paragraph feels long and overwhelming. It’s not very scannable, readable, or very nice to look at overall. </p>
+
+      <h2>The Sweet Spot</h2>
+      <p>If we know that our paragraphs need to be between 45 and 75 characters, how are we supposed to measure them quickly and efficiently while testing layouts in the browser? Some people have resorted to manually adding an asterisk at the 45th and 75th character, and there’s certainly nothing wrong with that technique.</p>
+
+      <p>But in my quest for <strong>automated typographic perfection</strong> I wanted a way to visually see what target I was shooting for. <a href="https://github.com/mds/readable">Readable</a></strong> creates that target.</p>
+
+      <h2>How it works</h2>
+      <p>The content of each <strong>paragraph</strong> tag is converted into a text string right after we duplicated it as a data attribute for safe keeping. The text string is then counted using the .substring() function in jQuery to find the 45–75 sweet spot. We then pop in a <strong>span</strong> tag with a <strong>"readable"</strong> class. This gives us what we need to create the styles. Once the toggle is switched off, we reinsert the original html content back into the paragraph using the preserved html from the data attribute. If you want to dig deeper, <a href="https://github.com/mds/readable"><strong>view it on GitHub</strong></a>.</p>
+
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="http://baymard.com/blog/line-length-readability">Readability: the Optimal Line Length</a>, Baymard Institute</li>
+        <li><a href="http://mikeyanderson.com/optimal_characters_per_line">Optimal Characters Per Line</a>, Mike Anderson</li>
+        <li><a href="http://www.nngroup.com/articles/information-scent/">Information Foraging</a>, Neilson Norman Group</li>
+        <li><a href="http://www.slate.com/articles/technology/the_browser/2008/06/lazy_eyes.single.html">Lazy Eyes</a>, Michael Agger</li>
+        <li><a href="http://www.pearsonified.com/typography/">Golden Ratio Typography Calculator</a>, Pearsonified</li>
+      </ul>
+
+    </article>
+
+    
+    <!-- call jQuery and readable.js here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="readable/readable-min.js"></script>
+
+  </body>
+</html>

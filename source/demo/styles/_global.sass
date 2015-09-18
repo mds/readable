@@ -7,15 +7,15 @@ body
   background: $bg
   +easeall
 
-  +small //480
+  +small 
     font-size: 18px
     +easeall
 
-  +medium //768
+  +medium 
     font-size: 22px
     +easeall
 
-  +large //1336
+  +large 
     font-size: 26px
     +easeall
 
@@ -62,8 +62,11 @@ article
     font-size: .875em
 
   span 
+    margin-right: 0
+
     +small
       float: right
+      margin-right: .5em
 
 .cta-primary
   font-style: italic
@@ -79,6 +82,8 @@ article
 a 
   color: $secondary
   text-decoration: none
+  font-weight: bold
+  border-radius: 2px
 
   &:hover
     background: rgba($secondary, .1)

@@ -3,10 +3,6 @@
   bottom: 1em
   right: 1em
   z-index: 1000
-  // border-radius: 6px 0 0 0 
-  // padding: .5em 1em
-  // background: white
-  // box-shadow: 0 0 10px 0 rgba($black, .2)
 
 .toggle 
   position: absolute
@@ -59,6 +55,7 @@ input.toggle + label:after
 
 input.toggle:checked + label
   background-color: $switch-on
+  box-shadow: inset 0 1px 2px 0 rgba($black, .2)
 
 input.toggle:checked + label:after
   transform: translateX($switch-small)

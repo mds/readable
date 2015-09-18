@@ -1,6 +1,7 @@
 $small-width: 480px
 $medium-width: 768px
 $large-width: 1366px
+$xl-width: 1600px
 
 =small 
   @media (min-width: #{$small-width})
@@ -12,6 +13,10 @@ $large-width: 1366px
 
 =large
   @media (min-width: #{$large-width})
+    @content
+
+=xl
+  @media (min-width: #{$xl-width})
     @content
 
 =easeall

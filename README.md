@@ -8,7 +8,7 @@ This gives you a visual reference to tell you if tweaks are needed on your font-
 
 Read why the 45-75 rule is important and [view the demo here](http://mds.sh/readable).
 
-## Implementation
+## Implementation Using jQuery
 There are 3 files required to get **Readable** working on your site.
 2 of them are inside the **readable** folder and the other is jQuery.
 
@@ -34,3 +34,30 @@ Put **readable.css** before your closing `</head>` and **jQuery** and **readable
   </body>
 </html>
 ```
+
+## Implementation Using Vanilla JavaScript
+Only 2 files required to get **Readable** working on your site.
+They are inside the **readable** folder.
+
+1. readable.css *(2 kilobytes)*
+2. readable-vanilla.js *(1 kilobyte)*
+
+
+Put **readable.css** before your closing `</head>` and **readable-vanilla.js** just before your closing `</body>`
+
+```html
+<html>
+  <head>
+    <title>Your Website</title>
+    <!-- readable styles -->
+    <link rel="stylesheet" href="readable/readable.css">
+  </head>
+  <body>
+    <!-- your website here -->
+    <!-- readable script -->
+    <script type="text/javascript" src="readable/readable-vanilla.js"></script>
+  </body>
+</html>
+```
+
+Thanks to [Jon Suh](http://github.com/jonsuh) for the vanilla flavor!

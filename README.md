@@ -24,13 +24,13 @@ Put **readable.css** before your closing `</head>` and **jQuery** and **readable
   <head>
     <title>Your Website</title>
     <!-- styles -->
-    <link rel=“stylesheet” href=“readable/readable.css”>
+    <link rel="stylesheet" href="readable/readable.css">
   </head>
   <body>
     <!-- your website here -->
     <!-- scripts -->
-    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js”></script>
-    <script type=“text/javascript” src=“readable/readable.js”></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="readable/readable.js"></script>
   </body>
 </html>
 ```

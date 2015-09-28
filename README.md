@@ -61,3 +61,6 @@ Put **readable.css** before your closing `</head>` and **readable-vanilla.js** j
 ```
 
 Thanks to [Jon Suh](http://github.com/jonsuh) for the vanilla flavor!
+
+## Bookmarklet
+I started tinkering with a bookmarklet, but it doesn't work yet. Feel free to fork it and get it working. :)

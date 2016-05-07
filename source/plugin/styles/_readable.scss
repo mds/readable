@@ -1,0 +1,95 @@
+.#{$prefix}-switch {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1000;
+  transform: translateZ(0);
+}
+
+.#{$prefix}-toggle {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+
+  & + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+input.#{$prefix}-toggle {
+  & + label {
+    padding: 2px;
+    width: $switch-big;
+    height: $switch-small;
+    background-color: $switch-off;
+    border-radius: $switch-small;
+    transition: background 0.2s;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+    }
+
+    &:before {
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      right: 2px;
+      background-color: $bg;
+      border-radius: $switch-small;
+      transition: background 0.2s;
+    }
+
+    &:after {
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: $control-width;
+      background-color: $switch-off;
+      border-radius: $control-width;
+      transition: transform 0.2s, background 0.2s;
+    }
+  }
+
+  &:checked + label {
+    background-color: $switch-on;
+    box-shadow: inset 0 1px 2px 0 rgba($black, .2);
+
+    &:before {
+      background-color: $switch-on;
+    }
+
+    &:after {
+      transform: translateX($switch-small);
+      background-color: $bg;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      transition: transform 0.2s, background 0.2s;
+    }
+  }
+}
+
+p .#{$prefix}-highlight {
+  background: rgba($primary, .2);
+
+  &:before,
+  &:after {
+    padding: .25em 0;
+    content: '';
+  }
+
+  &:before {
+    outline: 1px solid $primary;
+  }
+
+  &:after {
+    outline: 1px solid $primary;
+  }
+}

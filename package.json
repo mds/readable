@@ -1,0 +1,26 @@
+{
+  "name": "readable",
+  "version": "1.0.0",
+  "description": "![readable in action](https://s3.amazonaws.com/f.cl.ly/items/081k1i0l1G1s090b2t2W/readable.gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skip405/readable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skip405/readable/issues"
+  },
+  "homepage": "https://github.com/skip405/readable",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}

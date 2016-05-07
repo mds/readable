@@ -1,0 +1,19 @@
+Important changes:
+
+1. prefixed the elements. Introducing a custom prefix (like `rdbl`) will most of the time prevent the appended elements inherit the styles that may already be on a page. A user may have a `toggle` class on their page that may have different styles that you don't want to be applied to your own `toggle`.
+
+2. cached the toggler and all the paragraphs. If we are toggling the paragraphs text, it is always a good idea to refer to the cached paragraphs. Unless, of course, you didn't cache it to be able to highlight dynamically appended (changed) paragraphs. Will undo the change if it's this case.
+
+3. improved semantics by changing <span> to <mark>
+
+4. renamed functions to better explain what they do instead of what elements they deal with
+
+5. used outline instead of borders so that the with of the marker did not influence the layout
+
+6. added a check to highlight the paragraphs longer than 75 characters
+
+7. used chaining in some cases, some other cosmetic tweaks, please compare the two versions
+
+8. removed the disabled attribute from the input, as behaviour doesn't seem to depend on it
+
+9. temporarily introduced grunt, converted sass into scss, as (unfortunately) I do not code in the sass notation :)

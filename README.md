@@ -6,7 +6,7 @@ Readable is a small jQuery plugin to help you make your paragraphs, well, more r
 
 This gives you a visual reference to tell you if tweaks are needed on your font-size or content width, etc.
 
-Read why the 45-75 rule is important and [view the demo here](http://mds.sh/readable).
+Read why the 45-75 rule is important and [view the demo here](https://readable.now.sh/).
 
 ## Implementation Using jQuery
 There are 3 files required to get **Readable** working on your site.
